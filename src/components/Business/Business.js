@@ -15,10 +15,12 @@ const business = {
 
 class Business extends React.Component {
   render() {
+    const businessImgAlt = `${business.name} image`
+
     return (
       <div className="Business">
         <div className="image-container">
-          <img src={business.imageSrc} alt='' />
+          <img src={business.imageSrc} alt={businessImgAlt} />
         </div>
         <h2>{business.name}</h2>
         <div className="Business-information">
