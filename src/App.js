@@ -14,9 +14,13 @@ class App extends Component {
   }
 
   searchYelp(term, location, searchBy) {
+    if (!term || !term.length) return alert("Please enter search term")
+    if (!location || !location.length) return alert("Please enter location")
     Yelp.search(term, location, searchBy)
     .then(businesses => {
-      this.setState({ businesses })
+      this.setState({
+        businesses: businesses || this.state.businesses
+      })
     })
   }
 
