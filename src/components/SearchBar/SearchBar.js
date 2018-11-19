@@ -54,6 +54,7 @@ class SearchBar extends React.Component {
   }
 
   render() {
+    const buttonText = this.props.loading ? "Loading…" : "Let's Go"
     return (
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
@@ -66,7 +67,7 @@ class SearchBar extends React.Component {
           <input onChange={this.handleLocationChange} placeholder="Where?" />
         </div>
         <div className="SearchBar-submit">
-          <div className="button" onClick={this.handleSearch}>Let's Go</div>
+          <div className="button" onClick={this.handleSearch}>{buttonText}</div>
         </div>
       </div>
     )
