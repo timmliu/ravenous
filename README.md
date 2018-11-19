@@ -2,6 +2,28 @@
 
 A Yelp clone built with React.
 
+## [Deploy using Surge](https://daveceddia.com/deploy-create-react-app-surge/)
+1. Install Surge:
+
+    `npm install -g surge`
+
+2. Run the Create React App build:
+
+    `cd your-react-project`
+    `npm run build`
+
+3. Switch into the build directory:
+
+    `cd build`
+
+4. Run Surge, and follow the prompts. All it needs is an email and a password, and you can optionally specify a different domain name.
+
+    `surge`
+
+5. specify subdomain as ravenous-me.surge.sh
+
+6. visit http://ravenous-me.surge.sh/
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
