@@ -3,6 +3,12 @@
 A Yelp clone built with React.
 
 ## [Deploy using Surge](https://daveceddia.com/deploy-create-react-app-surge/)
+
+### Subsequent deploys
+`yarn run deploy:surge`
+
+### First deploy
+
 1. Install Surge:
 
     `npm install -g surge`
